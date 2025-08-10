@@ -1,0 +1,34 @@
+[
+  {
+    "id": "id1",
+    "empresaId": "1a2b3c4d",
+    "importe": 15000,
+    "cuentaDebito": "0000000000000000000001",
+    "cuentaCredito": "0000000000000000000002",
+    "fecha": "2025-07-25T00:00:00.000Z"
+  },
+  {
+    "id": "id2",
+    "empresaId": "2b3c4d5e",
+    "importe": 25000,
+    "cuentaDebito": "0000000000000000000003",
+    "cuentaCredito": "0000000000000000000004",
+    "fecha": "2025-05-15T00:00:00.000Z"
+  },
+  {
+    "id": "id3",
+    "empresaId": "3c4d5e6f",
+    "importe": 32000,
+    "cuentaDebito": "0000000000000000000005",
+    "cuentaCredito": "0000000000000000000006",
+    "fecha": "2025-08-05T00:00:00.000Z"
+  },
+  {
+    "id": "dd36d1a6-1933-47b5-bec6-f51ba67f4263",
+    "empresaId": "ec89f4a4-b048-4b0c-87e9-800dcdb6a2a0",
+    "importe": 35000000,
+    "cuentaDebito": "0000000000000000000006",
+    "cuentaCredito": "0000000000000000000010",
+    "fecha": "2025-08-10T22:36:20.009Z"
+  }
+]

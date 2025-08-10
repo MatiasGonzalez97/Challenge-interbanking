@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "2ac25e83-0078-4b09-a534-bb906fd23204",
+		"name": "Challenge-interbanking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44684304",
+		"_collection_link": "https://matigonzalez-9036644.postman.co/workspace/Mati-gonzalez's-Workspace~d2afbedd-0de6-45e7-8db7-dd70fe529b35/collection/44684304-2ac25e83-0078-4b09-a534-bb906fd23204?action=share&source=collection_link&creator=44684304"
+	},
+	"item": [
+		{
+			"name": "Crea companias",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cuit\": \"11122245367\",\r\n    \"razonSocial\": \"Mi razon social 2\",\r\n    \"tipo\": \"CORPORATIVA\",\r\n    \"fechaAdhesion\": \"2024-08-08\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todas las companias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cuit\": \"11108245367\",\r\n    \"razonSocial\": \"Mi razon social 2\",\r\n    \"tipo\": \"PYME\",\r\n    \"fechaAdhesion\": \"2024-08-08\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empresas que se adhirieron el ultimo mes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/companies/joined-last-month",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies",
+						"joined-last-month"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empresas que transfirieron el ultimo mes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/companies/transferred-last-month",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"companies",
+						"transferred-last-month"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crea una transferencia",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"empresaId\": \"ec89f4a4-b048-4b0c-87e9-800dcdb6a2a0\",//El ID debe ser de una empresa que exista en companies.json\r\n  \"importe\": 35000000,\r\n  \"cuentaDebito\": \"0000000000000000000006\",\r\n  \"cuentaCredito\": \"0000000000000000000010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/transfers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer todas las transferencia",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/transfers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transfers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
