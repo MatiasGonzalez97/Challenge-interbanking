@@ -19,40 +19,5 @@
     "razonSocial": "Tech Innovadora SRL",
     "tipo": "PYME",
     "fechaAdhesion": "2025-08-01T00:00:00.000Z"
-  },
-  {
-    "id": "1bbb208e-5b7e-4f6f-8e3c-e56af6ddf8a9",
-    "cuit": "20408245967",
-    "razonSocial": "Mi razon social 2",
-    "tipo": "PYME",
-    "fechaAdhesion": "2025-08-10T21:43:25.980Z"
-  },
-  {
-    "id": "c1ad46a7-58af-440b-b1a2-e9895ae0c454",
-    "cuit": "20408245267",
-    "razonSocial": "Mi razon social 2",
-    "tipo": "PYME",
-    "fechaAdhesion": "2025-08-08"
-  },
-  {
-    "id": "af2939ab-638b-4116-8316-1fb4584b0ace",
-    "cuit": "11108245267",
-    "razonSocial": "Mi razon social 2",
-    "tipo": "PYME",
-    "fechaAdhesion": "2024-08-08"
-  },
-  {
-    "id": "b627c1f4-7a7e-4d84-bd69-a23783a885bd",
-    "fechaAdhesion": "2024-08-08T00:00:00.000Z",
-    "cuit": "11108245367",
-    "razonSocial": "Mi razon social 2",
-    "tipo": "PYME"
-  },
-  {
-    "id": "ec89f4a4-b048-4b0c-87e9-800dcdb6a2a0",
-    "fechaAdhesion": "2024-08-08T00:00:00.000Z",
-    "cuit": "11122245367",
-    "razonSocial": "Mi razon social 2",
-    "tipo": "CORPORATIVA"
   }
 ]
