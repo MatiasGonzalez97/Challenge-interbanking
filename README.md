@@ -23,7 +23,7 @@
 3. **Probar los endpoints**
    - En la carpeta del proyecto encontrarás una colección de **Postman** para probar los EPs solicitados, para utilizar esto simplemente dirijanse a Postman y coloquen importar, arrastren o seleccionen el archivo y con eso ya van a poder ver la colección.
    - Se incluyen **datos de prueba**:
-     - **Transferencias**: mockeadas ya que no hay endpoint de creación.
+     - **Transferencias**: mockeadas.
      - **Compañías**: se crearon registros para que el primer `GET` no devuelva vacío.
 
 4. **Ejecutar tests unitarios**
