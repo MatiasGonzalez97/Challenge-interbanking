@@ -116,9 +116,10 @@ async create(dto: CreateCompanyDto) {
 ### 3️⃣ Ejemplo de entrada
 ```json
 {
-  "cuit": "30700000004",
-  "razonSocial": "Empresa Lambda SRL",
-  "tipo": "PYME"
+  "cuit": "30700000001",
+  "razonSocial": "Empresa Ejemplo SRL",
+  "tipo": "PYME",
+  "fechaAdhesion": "2024-08-08"
 }
 ```
 
