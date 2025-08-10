@@ -67,7 +67,8 @@ src/
 {
   "cuit": "30700000001",
   "razonSocial": "Empresa Ejemplo SRL",
-  "tipo": "PYME"
+  "tipo": "PYME",
+  "fechaAdhesion": "2024-08-08"
 }
 ```
 
