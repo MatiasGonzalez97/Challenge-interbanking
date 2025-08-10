@@ -106,7 +106,7 @@ import axios from 'axios';
 
 async create(dto: CreateCompanyDto) {
   const response = await axios.post(
-    'https://abc123.aws/dev/register-company',
+    'https://abc123.execute-api.aws/dev/register-company',
     dto
   );
   return response.data;
