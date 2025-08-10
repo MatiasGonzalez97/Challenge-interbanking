@@ -90,7 +90,7 @@ src/
 
 ---
 
-## **☁ Lambda – Integración opcional**
+## **Lambda – Integración opcional**
 ### 1️⃣ Exponer la Lambda vía API Gateway
 - Crear en AWS un **API Gateway REST API**.
 - Configurar ruta `POST /register-company` que invoque la Lambda.
