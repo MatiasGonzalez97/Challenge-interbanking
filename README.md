@@ -145,6 +145,7 @@ async create(dto: CreateCompanyDto) {
 ```
 
 **Referencia**: Imagen de flujo en `lambda/lambda_flujo.png`.
+**Codigo de lambda**: `lambda/registerCompany.js`
 
 ---
 
