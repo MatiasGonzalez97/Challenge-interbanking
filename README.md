@@ -67,7 +67,8 @@ src/
 {
   "cuit": "30700000001",
   "razonSocial": "Empresa Ejemplo SRL",
-  "tipo": "PYME"
+  "tipo": "PYME",
+  "fechaAdhesion": "2024-08-08"
 }
 ```
 
@@ -89,7 +90,7 @@ src/
 
 ---
 
-## **☁ Lambda – Integración opcional**
+## **Lambda – Integración opcional**
 ### 1️⃣ Exponer la Lambda vía API Gateway
 - Crear en AWS un **API Gateway REST API**.
 - Configurar ruta `POST /register-company` que invoque la Lambda.
@@ -105,7 +106,7 @@ import axios from 'axios';
 
 async create(dto: CreateCompanyDto) {
   const response = await axios.post(
-    'https://abc123.aws/dev/register-company',
+    'https://abc123.execute-api.aws/dev/register-company',
     dto
   );
   return response.data;
@@ -115,9 +116,10 @@ async create(dto: CreateCompanyDto) {
 ### 3️⃣ Ejemplo de entrada
 ```json
 {
-  "cuit": "30700000004",
-  "razonSocial": "Empresa Lambda SRL",
-  "tipo": "PYME"
+  "cuit": "30700000001",
+  "razonSocial": "Empresa Ejemplo SRL",
+  "tipo": "PYME",
+  "fechaAdhesion": "2024-08-08"
 }
 ```
 
@@ -143,6 +145,7 @@ async create(dto: CreateCompanyDto) {
 ```
 
 **Referencia**: Imagen de flujo en `lambda/lambda_flujo.png`.
+**Codigo de lambda**: `lambda/registerCompany.js`
 
 ---
 
