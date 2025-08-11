@@ -4,6 +4,7 @@ import { CreateCompanyDto } from './dto/create-company.dto';
 import { Company } from './entities/company.entity';
 import { randomUUID } from 'crypto';
 import { TransfersRepository } from '../transfers/transfers.repository';
+import { getLastMonthUtcDate } from 'src/common/date.utils';
 
 @Injectable()
 export class CompaniesService {
@@ -19,7 +20,7 @@ export class CompaniesService {
   async findJoinedLastMonth(): Promise<Company[]> {
     const companies = await this.companiesRepository.findAll();
 
-    const lastMonthUtc = await this._getLastMonthUtc();
+    const lastMonthUtc = getLastMonthUtcDate();
 
     return companies.filter((c) => new Date(c.fechaAdhesion) >= lastMonthUtc);
   }
@@ -28,7 +29,7 @@ export class CompaniesService {
     const companies = await this.companiesRepository.findAll();
     const transfers = await this.transfersRepository.findAll();
 
-    const lastMonthUtc = await this._getLastMonthUtc();
+    const lastMonthUtc = getLastMonthUtcDate();
 
     const companyIds = new Set(
       transfers
@@ -61,14 +62,5 @@ export class CompaniesService {
     await this.companiesRepository.saveAll(companies); //En lugar de guardarlo en un JSON se podría guardar en una base de datos
 
     return newCompany;
-  }
-
-  _getLastMonthUtc(): Promise<Date> {
-    const now = new Date();
-    return Promise.resolve(
-      new Date(
-        Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - 1, now.getUTCDate()),
-      ),
-    );
   }
 }
